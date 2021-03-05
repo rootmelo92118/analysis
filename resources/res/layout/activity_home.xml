@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="#efeef3" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:background="@drawable/header" android:layout_width="match_parent" android:layout_height="200dp">
+        <Button android:textSize="18sp" android:textColor="#fff" android:gravity="center" android:id="@+id/btn_connect" android:background="@drawable/btn_disconnect" android:focusable="true" android:clickable="true" android:layout_width="170dp" android:layout_height="60dp" android:text="@string/init" android:layout_centerInParent="true" android:textAllCaps="false"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <TextView android:textColor="#fff" android:id="@+id/expire_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="32dp" android:text="@string/member_common_type" android:layout_below="@+id/btn_connect" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/speed_up" android:padding="16dp" android:focusable="true" android:clickable="true" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <ImageView android:layout_width="36dp" android:layout_height="36dp" android:src="@drawable/speed_up"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="@string/speed_up"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/help_friend" android:padding="16dp" android:focusable="true" android:clickable="true" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <ImageView android:id="@+id/invitation_code_icon" android:layout_width="36dp" android:layout_height="36dp" android:src="@drawable/not_active"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="@string/help_speed_up"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/app_settings" android:padding="16dp" android:focusable="true" android:clickable="true" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <ImageView android:layout_width="36dp" android:layout_height="36dp" android:src="@drawable/apps"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="@string/app_settings"/>
+        </LinearLayout>
+    </LinearLayout>
+    <Button android:textSize="16sp" android:id="@+id/btn_about" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="58dp" android:text="@string/about" android:textAllCaps="false"/>
+    <View android:visibility="invisible" android:layout_width="0dp" android:layout_height="0dp" android:layout_weight="1"/>
+    <com.google.android.gms.ads.AdView android:id="@+id/adView" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" app:adSize="BANNER" app:adUnitId="ca-app-pub-5458417846516586/4092812582"/>
+</LinearLayout>

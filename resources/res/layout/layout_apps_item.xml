@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="?android:attr/selectableItemBackground" android:focusable="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/itemicon" android:paddingTop="2dp" android:paddingBottom="2dp" android:layout_width="60dp" android:layout_height="48dp" android:scaleType="fitCenter"/>
+    <Switch android:textSize="18sp" android:textColor="?android:attr/textColorSecondary" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/itemcheck" android:focusable="false" android:focusableInTouchMode="false" android:clickable="false" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
+</LinearLayout>
